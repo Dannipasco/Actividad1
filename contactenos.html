@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Actividad</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/estilos.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/menu.css'>
+        <!--script src='main.js'></script>-->
+    </head>
+    <body>
+        <!--Inicia nuestro menu de la pagina-->
+        <nav id="menu">
+            <ul class="menu">
+                <li class="logo"> 
+                    <a href="#">
+                        <!--Imagen del logo-->
+                        <img src="./Img/logo.png">
+                    </a> 
+                </li> 
+                <li> <a href="./index.html">Inicio</a> </li> 
+                <li> <a href="./contactenos.html">Contáctenos</a> </li>
+                <li> 
+                <a href="#">Contenido</a> 
+                <!-- Menu desplegable -->
+                <ul>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Peliculas</a></li>
+                    <li><a href="#">Maraton</a></li>
+                </ul>
+                <!-- Fin Menu desplegable -->
+                </li>
+
+            </ul>
+        </nav>
+ 
+        <diV class="container">
+            <h1>Personajes de Rick and Morty</h1>
+
+            <!--Inicia formulario-->
+            <div>
+                <form>
+                    <div class="section-flex">
+                        <div class="elemnt-flex">
+                            <div class="label">
+                                <label for="type"> Tipo de mensaje </label>
+                            </div>
+                            <select id="type" name="type" required>
+                                <option value=""> Seleccione una opción </option>
+                                <option value="Cotización"> Cotización </option>
+                                <option value="Saludo"> Saludo </option>
+                                <option value="Queja"> Queja </option>
+                            </select>
+                        </div>
+
+                        <div class="elemnt-flex">
+                            <div class="label">
+                                <label for="name"> Nombres </label>
+                            </div>
+                            <input type="text" id="name" name="name" placeholder="Ingrese sus nombres" required>
+                        </div>
+
+                        <div class="elemnt-flex">
+                            <div class="label">
+                                <label for="email"> Email </label>
+                            </div>
+                            <input type="text" id="email" name="email" placeholder="example@correo.com" required>
+                        </div>
+
+                        <div class="elemnt-flex">
+                            <div class="label">
+                                <label for="celular"> Celular </label>
+                            </div>
+                            <input type="text" id="celular" name="celular" placeholder="Ingrese su celular" required>
+                        </div>
+
+                        <div class="elemnt-flex">
+                            <div class="label">
+                                <label for="comment"> Comentario </label>
+                            </div>
+
+                            <textarea id="comment" name="comment" placeholder="Ingrese su comentario">
+                            </textarea>
+                        </div>
+
+                        <div class="elemnt-flex">
+                            <div>
+                                <label>Seleccione el país donde vive</label>
+                            </div>
+                            <input type="checkbox" id="chk1" name=" chk1"> Alemania
+
+                            <input type="checkbox" id="chk2" name="chk2"> Colombia
+
+                            <input type="checkbox" id="chk3" name="chk3"> Noruega
+                        </div>
+
+
+                        <div class="elemnt-flex">
+                            <div>
+                                <label>¿Que rango de edad tienes?</label>
+                            </div>
+                            <input type="radio" name="radi" id="radios1" value="Mayor de 10 años"> Mayor de 10 años
+                            <input type="radio" name="radi" id="radios2" value="Mayor de 30 años"> Mayor de 30 años
+                            <input type="radio" name="radi" id="radios3" value="Mayor de 50 años"> Mayor de 50 años
+                        </div>
+
+                        <div class="btn-div">
+                            <button type="submit"> Enviar Datos </button>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+            
+        </diV>
+
+        <footer>
+            <p>Creado por Daniela Mayorga Pasco</p>
+        </footer>
+
+    </body>
+</html>
